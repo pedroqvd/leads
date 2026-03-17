@@ -1,0 +1,72 @@
+<h2>Como você quer construir o funil de conversa do WhatsApp?</h2>
+<p class="subtitle">Escolha a estrutura que melhor representa como seus leads devem navegar pelo funil</p>
+
+<div class="options">
+  <div class="option" data-choice="a" onclick="toggleSelect(this)">
+    <div class="letter">A</div>
+    <div class="content">
+      <h3>Árvore de menus numerados</h3>
+      <p>O bot envia um menu com opções numeradas. O lead responde com um número e avança para o próximo nó. Simples, previsível, funciona em qualquer celular.</p>
+      <div class="mockup" style="margin-top:12px">
+        <div class="mockup-header">Exemplo de conversa</div>
+        <div class="mockup-body" style="font-size:13px;line-height:1.8">
+          🤖 Olá! Como posso te ajudar?<br>
+          1️⃣ Quero conhecer os planos<br>
+          2️⃣ Já sou cliente<br>
+          3️⃣ Falar com um humano<br><br>
+          👤 <strong>1</strong><br><br>
+          🤖 Temos 3 planos disponíveis:<br>
+          1️⃣ Básico — R$99/mês<br>
+          2️⃣ Pro — R$199/mês<br>
+          3️⃣ Enterprise — consultar<br>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="option" data-choice="b" onclick="toggleSelect(this)">
+    <div class="letter">B</div>
+    <div class="content">
+      <h3>Perguntas sequenciais com coleta de dados</h3>
+      <p>O bot faz perguntas uma a uma e coleta informações (nome, empresa, interesse, orçamento). No final atualiza o lead no CRM e notifica o time de vendas.</p>
+      <div class="mockup" style="margin-top:12px">
+        <div class="mockup-header">Exemplo de conversa</div>
+        <div class="mockup-body" style="font-size:13px;line-height:1.8">
+          🤖 Oi! Qual é o nome da sua empresa?<br><br>
+          👤 <strong>Acme Ltda</strong><br><br>
+          🤖 Legal! Quantos funcionários vocês têm?<br>
+          1️⃣ Até 10<br>
+          2️⃣ 11–50<br>
+          3️⃣ 51–200<br>
+          4️⃣ Mais de 200<br><br>
+          👤 <strong>2</strong><br><br>
+          🤖 Perfeito! Um consultor vai entrar em contato em breve 🎯
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="option" data-choice="c" onclick="toggleSelect(this)">
+    <div class="letter">C</div>
+    <div class="content">
+      <h3>Funil híbrido com etapas de status</h3>
+      <p>Combina menus + coleta de dados. Cada resposta move o lead de etapa no CRM (Novo → Qualificado → Proposta → Convertido). O painel mostra em que etapa cada lead está no WhatsApp.</p>
+      <div class="mockup" style="margin-top:12px">
+        <div class="mockup-header">Funil de status no CRM</div>
+        <div class="mockup-body" style="font-size:12px">
+          <div style="display:flex;gap:8px;flex-wrap:wrap">
+            <div style="background:#e0f2fe;border-radius:6px;padding:6px 10px;color:#0369a1">📥 Novo<br><small>Recebeu 1ª msg</small></div>
+            <div style="color:#64748b;align-self:center">→</div>
+            <div style="background:#fef9c3;border-radius:6px;padding:6px 10px;color:#854d0e">🔍 Qualificado<br><small>Respondeu perguntas</small></div>
+            <div style="color:#64748b;align-self:center">→</div>
+            <div style="background:#dcfce7;border-radius:6px;padding:6px 10px;color:#166534">🎯 Proposta<br><small>Recebeu oferta</small></div>
+            <div style="color:#64748b;align-self:center">→</div>
+            <div style="background:#d1fae5;border-radius:6px;padding:6px 10px;color:#065f46">✅ Convertido<br><small>Fechou</small></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p class="subtitle" style="margin-top:20px">💡 Minha recomendação: <strong>C (Híbrido)</strong> — dá o melhor controle sobre onde cada lead está no funil e aparece direto no dashboard do CRM.</p>

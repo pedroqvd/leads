@@ -1,0 +1,41 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Claude_Preview__preview_start",
+      "Bash(npx prisma:*)",
+      "Bash(npm install:*)",
+      "Bash(curl -s http://localhost:3001/api/health)",
+      "Bash(curl -s -X POST http://localhost:3001/api/auth/login -H \"Content-Type: application/json\" -d '{\"\"email\"\":\"\"admin@minicrm.com\"\",\"\"password\"\":\"\"Admin@123\"\"}')",
+      "Bash(netstat -ano)",
+      "Bash(echo \"EXIT:$?\")",
+      "Bash(pkill -f \"node app.js\")",
+      "Bash(tasklist)",
+      "Bash(taskkill //PID 24420 //F)",
+      "Bash(echo \" EXIT:$?\")",
+      "Read(//c/Users/Meu Computador/.claude/plugins/cache/claude-plugins-official/superpowers/5.0.2/**)",
+      "Bash(bash scripts/start-server.sh --project-dir \"C:\\\\Users\\\\Meu Computador\\\\PROJETO VICTOR\")",
+      "Bash(bash \"C:\\\\Users\\\\Meu Computador\\\\.claude\\\\plugins\\\\cache\\\\claude-plugins-official\\\\superpowers\\\\5.0.2\\\\skills\\\\brainstorming\\\\scripts\\\\start-server.sh\" --project-dir \"C:\\\\Users\\\\Meu Computador\\\\PROJETO VICTOR\")",
+      "Bash(taskkill /PID 16104 /F)",
+      "Bash(taskkill /PID 7432 /F)",
+      "Bash(cmd /c \"taskkill /PID 16104 /F\")",
+      "Bash(cmd /c \"tasklist /FI \"\"PID eq 16104\"\"\")",
+      "Bash(cmd /c \"tasklist /FI \"\"PID eq 16104\"\" /FO CSV\")",
+      "Bash(cmd /c \"wmic process where ProcessId=16104 get name,ProcessId,CommandLine 2>&1\")",
+      "Bash(powershell -Command \"Stop-Process -Id 16104 -Force; Start-Sleep 1; netstat -ano | Select-String ''3001''\")",
+      "Bash(powershell -Command \"netstat -ano | Select-String ''5173''\")",
+      "Bash(powershell -Command \"Stop-Process -Id 7432 -Force; Start-Sleep 1; netstat -ano | Select-String ''5173''\")",
+      "Bash(TOKEN=\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQG1pbmljcm0uY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzczNTAwMjExLCJleHAiOjE3NzM1MjkwMTF9.nCt4Jq7vz3eEu7u0BEY8wSaV5S4oi7AlHYHFR6-BqgA\")",
+      "Bash(__NEW_LINE_36a0f25826565f52__ echo:*)",
+      "Bash(curl -s \"http://localhost:3001/api/leads?limit=5\" -H \"Authorization: Bearer $TOKEN\")",
+      "Bash(curl -s \"http://localhost:3001/api/analytics\" -H \"Authorization: Bearer $TOKEN\")",
+      "Bash(curl -s \"http://localhost:3001/api/integrations\" -H \"Authorization: Bearer $TOKEN\")",
+      "Bash(for i:*)",
+      "Bash(do)",
+      "Bash(curl -s -X POST http://localhost:3001/api/leads -H \"Content-Type: application/json\" -d \"{\"\"nome\"\":\"\"Lead Teste $i\"\",\"\"email\"\":\"\"lead$i@teste.com\"\",\"\"telefone\"\":\"\"1199999000$i\"\",\"\"utmSource\"\":\"\"google\"\",\"\"utmCampaign\"\":\"\"campanha-teste\"\"}\")",
+      "Bash(done)",
+      "Bash(find '/c/Users/Meu Computador/PROJETO VICTOR' -type f -name *.db -o -name *.sqlite -o -name *.sql)",
+      "Bash(find '/c/Users/Meu Computador/PROJETO VICTOR' -name *.db)",
+      "Read(//c/Users/Meu Computador/**)"
+    ]
+  }
+}

@@ -1,0 +1,51 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Lead {
+  id          Int      @id @default(autoincrement())
+  nome        String
+  email       String   @unique
+  telefone    String?
+  status      String   @default("Novo")
+  notas       String?
+
+  // Origem detectada automaticamente
+  source      String   @default("Direct")
+
+  // UTM Parameters (vindos da URL do anúncio)
+  utmSource   String?
+  utmMedium   String?
+  utmCampaign String?
+  utmContent  String?
+  utmTerm     String?
+
+  // Click IDs das plataformas de anúncios
+  fbclid      String?  // Meta Ads (Facebook / Instagram)
+  gclid       String?  // Google Ads
+
+  // CNPJ da empresa (opcional — consultado via Receita Federal)
+  cnpj        String?
+
+  // Contexto da visita
+  pageUrl     String?  // URL completa onde o lead preencheu o formulário
+
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+// Configurações das integrações com plataformas de anúncios
+model Integration {
+  id        Int      @id @default(autoincrement())
+  type      String   @unique  // 'meta' | 'google' | 'webhook'
+  name      String
+  config    String   @default("{}")  // JSON serializado
+  active    Boolean  @default(false)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
