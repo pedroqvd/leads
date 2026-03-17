@@ -9,8 +9,8 @@
     },
     {
       "name": "frontend",
-      "runtimeExecutable": "cmd",
-      "runtimeArgs": ["/c", "cd frontend && npm run dev"],
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["C:\\Users\\Meu Computador\\PROJETO VICTOR\\frontend\\start.js"],
       "port": 5173
     }
   ]
